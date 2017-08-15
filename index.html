@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up for Imstagram</title>
+</head>
+<body>
+	<h1>Sign Up to enjoy Imstagram with your Imaginary friends!</h1>
+	<!-- Sign-up form starts from here -->
+	<form action="http://www.example.com" method="GET" style="line-height: 150%">
+		<!-- First name -->
+		<label for="fn">First Name:</label>
+		<input id="fn" type="text" name="fname" placeholder="First name" required>
+		<!-- Last name -->
+		<label for="ln">Last Name:</label>
+		<input id="ln" type="text" name="lname" placeholder="Last name" required><br>
+		<!-- Gender  -->
+		<label>Gender:</label>
+		<label for="m">Male</label>
+		<input id="m" type="radio" name="Gender" value="male">
+		<label for="f">Female</label>
+		<input id="f" type="radio" name="Gender" value="female">
+		<label for="o">Other</label>
+		<input id="o" type="radio" name="Gender" value="other"><br>
+		<!-- Email and Password -->
+		<label for="e">Email:</label>
+		<input id="e" type="email" name="user-email" required placeholder="Enter your email">
+		<label for="p">Password:</label>
+		<input id="p" type="Password" name="password" required placeholder="Enter whatever" pattern=".{5,10}" title="Enter 5 to 10 characters"><br>
+		<!-- Birthday -->
+		<label for="bday">Birthday:</label>
+		<select id="bday" name="day">
+			<option>--Day--</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<!-- Either should implement php for dynamic option generation or just continue till idk varies for month(again php) -->
+		</select>	
+		<select id="bday" name="month">
+			<option>--Month--</option>
+			<option value="Jan">Jan</option>
+			<option value="Feb">Feb</option>
+			<option value="Mar">Mar</option>
+			<option value="Apr">Apr</option>
+			<!-- Either should implement php for dynamic option generation or just continue till idk varies for month(again php) -->
+		</select>	
+		<select id="bday" name="year">
+			<option>--Year--</option>
+			<option value="1996">1996</option>
+			<option value="1997">1997</option>
+			<!-- Either should implement php for dynamic option generation or just continue till idk varies for month(again php) -->
+		</select><br>
+		<!-- Agree to use Maradurs map -->
+		<span>I solemnly swear that I am up to no good!</span>
+		<input type="checkbox" name="can-use" value="yes"  >	
+		<!-- Submit Button -->
+		<br><button>Sign Up</button>
+	</form>
+</body>
+</html>
